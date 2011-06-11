@@ -30,5 +30,3 @@
 (search-for-primes 1000000001 3) (newline)
 (search-for-primes 10000000001 3) (newline)
 ; roughly 10^0.5 factor - what's expected
-	  
-
