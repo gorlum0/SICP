@@ -1,2 +1,4 @@
 
 My SICP code.
+
++ O(n) might mean Theta(n) depending on context
