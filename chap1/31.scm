@@ -23,5 +23,5 @@
 (display-line (* (product wallis
                           1
                           (lambda (x) (+ x 1))
-                          10000)
+                          100000)
                  2))
