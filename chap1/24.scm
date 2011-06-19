@@ -3,9 +3,6 @@
 (load "fermat-test.scm")
 (load "timed-prime-test.scm")
 
-(define (prime? n)
-  (fast-prime? n 100))
-
 (search-for-primes (+ (expt 10 10) 1) 3) (newline)
 (search-for-primes (+ (expt 10 20) 1) 3) (newline)
 (search-for-primes (+ (expt 10 30) 1) 3) (newline)
