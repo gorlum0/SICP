@@ -1,5 +1,6 @@
 #|(c) gorlum0 [at] gmail.com|#
 (load "../display-line.scm")
+(load "cont-frac.scm")
 
 ; closure?
 (define (tan-cf x k)
