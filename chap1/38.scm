@@ -2,15 +2,13 @@
 (load "../display-line.scm")
 (load "cont-frac.scm")
 
-(define (e-euler k)
-  (+ (cont-frac (lambda (i) 1)
-                (lambda (i)
-                  (if (= (remainder i 3) 2)
-                      (/ (+ i 1) 1.5)
-                      1))
-                k)
-     2.0))
+(define (euler k)
+  (define (d i)
+    (if (= (remainder i 3) 2)
+        (/ (+ i 1) 1.5)
+        1))
+  (cont-frac (lambda (i) 1) d k))
 
 ;====
 
-(display-line (e-euler 20))
+(display-line (+ 2.0 (euler 20)))
