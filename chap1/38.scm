@@ -2,19 +2,15 @@
 (load "../display-line.scm")
 (load "cont-frac.scm")
 
-(define (divides? a b)
-  (= (remainder b a) 0))
+(define (e-euler k)
+  (+ (cont-frac (lambda (i) 1)
+                (lambda (i)
+                  (if (= (remainder i 3) 2)
+                      (/ (+ i 1) 1.5)
+                      1))
+                k)
+     2.0))
 
 ;====
 
-(define (d i)
-  (let ((j (+ i 1)))
-    (if (divides? 3 j)
-        (* 2 (/ j 3))
-        1)))
-
-; e-2
-(display-line
- (cont-frac (lambda (i) 1.0)
-            d
-            20))
+(display-line (e-euler 20))
