@@ -1,6 +1,7 @@
 #|(c) gorlum0 [at] gmail.com|#
 (load "../display-line.scm")
 
+; need display guesses here
 (define tolerance 0.00001)
 (define (fixed-point f first-guess)
   (define (close-enough? v1 v2)
@@ -18,7 +19,7 @@
 
 ;=====
 
-; phi
+; x**x = 1000
 (display-line
  (fixed-point (lambda (x)
 				(average x (/ (log 1000)
