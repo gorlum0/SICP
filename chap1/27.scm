@@ -1,5 +1,5 @@
 
-(load "../display-line.scm")
+(load "../basic.scm")
 (load "fermat-test.scm")
 
 (define (test-congruent n)

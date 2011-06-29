@@ -1,5 +1,5 @@
 #|(c) gorlum0 [at] gmail.com|#
-(load "../display-line.scm")
+(load "../basic.scm")
 (load "smallest-divisor.scm")
 
 (define (filtered-accumulate combiner null-value term a next b filter)

@@ -1,5 +1,5 @@
 #|(c) gorlum0 [at] gmail.com|#
-(load "../display-line.scm")
+(load "../basic.scm")
 
 ; need display guesses here
 (define tolerance 0.00001)

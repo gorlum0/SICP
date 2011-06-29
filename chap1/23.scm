@@ -1,5 +1,5 @@
 
-(load "../display-line.scm")
+(load "../basic.scm")
 (load "smallest-divisor.scm")
 (load "timed-prime-test.scm")
 

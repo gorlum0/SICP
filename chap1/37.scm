@@ -1,5 +1,5 @@
 #|(c) gorlum0 [at] gmail.com|#
-(load "../display-line.scm")
+(load "../basic.scm")
 (load "cont-frac.scm")
 
 ;====

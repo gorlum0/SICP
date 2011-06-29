@@ -1,5 +1,5 @@
 
-(load "../display-line.scm")
+(load "../basic.scm")
 (load "smallest-divisor.scm")
 
 (display-line (smallest-divisor 199)) 
