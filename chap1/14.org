@@ -1,0 +1,10 @@
+
+count-change space order of growth:
+- O(n) because max depth is n
+
+count-change time order of growth:
+1. cc(n, 1) = O(n)
+2. cc(n, 2) = cc(n, 1) + cc(n-5, 2)
+3. each 2. step is O(n) and there are roughly n/5 such steps
+4. so we have O(n^2)
+5. by analogue we get O(n^k) (k currencies)
