@@ -19,8 +19,8 @@
 (define (average-damp f)
   (lambda (x) (average x (f x))))
 (define (sqrt x)
-  ((iterative-improve close-enough?
-					  (average-damp (lambda (y) (/ x y))))
+  ((iterative-improve close-enough?					  
+                      (average-damp (lambda (y) (/ x y))))
    1.0))
 
 ;=====
@@ -28,8 +28,8 @@
 ; x**x = 1000
 (display-line
  (fixed-point (lambda (x)
-				(average x (/ (log 1000)
-							  (log x))))
-			  2.0))
+                (average x (/ (log 1000)
+                              (log x))))
+              2.0))
 (display-line
  (sqrt 225))
